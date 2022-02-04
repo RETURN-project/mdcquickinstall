@@ -1,0 +1,27 @@
+BootStrap: docker
+From: returnproject/makedatacube:v01
+
+%help
+    Please note that the definition file for returnproject/makedatacube
+    can be found at https://github.com/RETURN-project/makeDataCube/blob/master/inst/docker/Dockerfile
+
+%runscript
+    /bin/bash "$@"
+
+%environment
+    export TZ=Europe/Amsterdam
+
+%files
+    .laads /home
+    .boto /home
+    .netrc /home
+
+%post
+    # Do nothing
+
+%test
+    # Is it installed?
+    Rscript -e "library(makeDataCube)"
+
+%environment
+    export LC_ALL=C
