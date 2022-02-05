@@ -6,6 +6,8 @@ Unfortunately, there is a step that nobody can perform for you: creating and sto
 Your personal credentials cannot and should not be available in an online image created by me.
 This repository will help you easily create your own images, including your credentials.
 
+![](./img/diagram.png)
+
 ## How to use this repo
 
 1. Clone it to your working directory.
