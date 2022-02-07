@@ -15,7 +15,17 @@ This repository will help you easily create your own images, including your cred
 3. Copy your `.boto` file in your working directory.
 4. Copy your `.netrc` file in your working directory.
 
+The three required files are typically stored at the home directory (for instance `~/.laads`).
+
+---
+
+Are you missing some of the files?
+Click [here](https://github.com/RETURN-project/makeDataCube#credentials) for help.
+
+---
+
 The next step depends of the type of image you want to create.
+
 ### Create a Docker image?
 To create a Docker image containing both `makeDataCube` and your personal credentials, run:
 
@@ -23,7 +33,7 @@ To create a Docker image containing both `makeDataCube` and your personal creden
 docker image build -t <tag> .
 ```
 
-where tag is just the identification name you want to give to your Docker image.
+where `tag` is just the identification name you want to give to your Docker image.
 
 ### Create a Singularity image?
 To create a Singularity image containing both `makeDataCube` and your personal credentials, run:
@@ -32,4 +42,4 @@ To create a Singularity image containing both `makeDataCube` and your personal c
 singularity build <imagename>.sif singularity.def
 ```
 
-where imagename is just the identification name you want to give to your Singularity image.
+where `imagename` is just the identification name you want to give to your Singularity image.
